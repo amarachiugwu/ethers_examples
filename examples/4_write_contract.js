@@ -16,7 +16,7 @@ const ERC20_ABI = [
     "function transfer(address to, uint amount) returns (bool)",
 ];
 
-const address = '0x01be23585060835e02b77ef475b0cc51aa1e0709' // LINK chainlink token
+const address = '0x01be23585060835e02b77ef475b0cc51aa1e0709' // LINK token address
 const contract = new ethers.Contract(address, ERC20_ABI, provider)
 
 const main = async () => {
